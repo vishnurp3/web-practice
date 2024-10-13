@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+</head>
+<body>
+<h1>Sign Up</h1>
+<form action="/signup" method="POST">
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" required maxlength="100"><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" minlength="8" required><br><br>
+
+    <label>Gender:</label>
+    <input type="radio" id="male" name="gender" value="male" required>
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br><br>
+
+    <label>Subscribe to:</label>
+    <input type="checkbox" id="news" name="subscription" value="news">
+    <label for="news">News</label>
+    <input type="checkbox" id="events" name="subscription" value="events">
+    <label for="events">Events</label><br><br>
+
+    <label for="country">Country:</label>
+    <select id="country" name="country" required>
+        <option value="">Please select</option>
+        <option value="india">India</option>
+        <option value="usa">USA</option>
+        <option value="uk">UK</option>
+    </select><br><br>
+
+    <label for="comments">Comments:</label>
+    <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+    <button type="submit">Sign Up</button>
+</form>
+</body>
+</html>
