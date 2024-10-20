@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Example</title>
+    <style>
+        /*.container {
+            display: flex;
+            flex-direction: row; !* Toys are side by side *!
+            justify-content: space-between; !* Even space between toys *!
+            align-items: center; !* Toys are centered vertically *!
+            height: 200px; !* Height of the toy box *!
+            background-color: lightblue;
+        }
+
+        .toy {
+            width: 100px;
+            height: 100px;
+            background-color: lightcoral;
+            text-align: center;
+            line-height: 100px;
+            font-size: 20px;
+            border-radius: 10px;
+        }*/
+        .container {
+            text-align: center; /* Center align items horizontally */
+            background-color: lightblue;
+            height: 200px; /* Height of the container */
+            line-height: 200px; /* Vertically center items */
+        }
+
+        .toy {
+            display: inline-block; /* Make items inline but still block-like */
+            vertical-align: middle; /* Align items vertically in the center */
+            width: 100px;
+            height: 100px;
+            background-color: lightcoral;
+            font-size: 20px;
+            line-height: 100px; /* Centers text inside the box */
+            border-radius: 10px;
+            margin: 0 20px; /* Adds space between the toys */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="toy">Toy 1</div>
+    <div class="toy">Toy 2</div>
+    <div class="toy">Toy 3</div>
+</div>
+
+</body>
+</html>
